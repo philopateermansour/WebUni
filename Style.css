@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+}
+
+img{
+    width: 100%;
+}
+/* nav */
+.navBar{
+    position: absolute;
+    top: 60px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navBar .navLinks{
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+.navBar .navLinks a{
+    text-decoration:none ;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.navBar .navLinks a:hover{
+    color: #d82a4e;
+}
+.logInBtn{
+        font-family: "Raleway", sans-serif;
+        padding: 15px 80px;
+        height: 53px;
+        font-weight: 600;
+        font-size: 16px;
+        color: white;
+        background-color: #d82a4e;
+        border: none;
+        cursor: pointer;
+}
+/* nav */
+
+/* home */
+.home{
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    text-align: center;
+}
+.home .text h2{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.home .text p{
+    font-family: "Raleway", sans-serif;
+    font-size: 14.1px;
+    color: white;
+    line-height: 2.2;
+    font-weight: 500;
+}
+.home .registration input[type="text"]{
+    font-family: "Raleway", sans-serif;
+    height: 53px;
+    width: 36.4%;
+    padding: 0 30px;
+    margin-right: 22px;
+    border: none;
+    font-size: 14px;
+    margin-top: 10%;
+}
+.signUpBtn{
+    font-family: "Raleway", sans-serif;
+    padding: 15px 50px;
+    height: 53px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #d82a4e;
+    border: none;
+    cursor: pointer;
+}
+/* home */
+
+/* categories */
+
+.categories{
+    padding: 115px 0 ;
+}
+.categorieDescription  h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #474747;
+    text-align: center;
+
+} 
+
+.categorieDescription p{
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14.1px;
+    color: #878787;
+    line-height: 2.2;
+    text-align: center;
+}
+.categories .container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;  
+    margin: 110px auto 0;
+
+}
+.categories .container .card{
+    width: calc((100% - 60px)/3);
+
+}
+
+.categories .container .card img{
+    display: block;
+}
+.categories .container .card .cardCaption {
+    padding: 44px 35px;
+    background-color: #EDF4F6;
+
+    
+}
+.categories .container .card .cardCaption h5{
+    font-size: 20px;
+    color: #474747;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    margin-bottom: 11px;
+}.categories .container .card .cardCaption p{
+    font-size: 14.1px;
+    color: #878787;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 25px;
+    font-weight: 500;
+}.categories .container .card .cardCaption span{
+    font-size: 18px;
+    color: #d82a4e;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.categories .container .card .cardCaption:hover {
+    background-color: #d82a4e;
+}
+.categories .container .card .cardCaption:hover *{
+    color: white;
+}
+/* categories */
+/* search */
+
+.search{
+    margin-bottom: 115px;
+}
+.search .container{
+    background-color: #d82a4e;
+    margin: auto;
+    padding-block: 50px 60px;
+}
+.search .container  h2{
+    font-size: 46px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: "Raleway", sans-serif;
+}
+.search .container .searchBox{
+    width: 85%;
+    margin: auto;
+    padding: 44px 38px;
+    background-color: white;
+    display: flex;
+    gap: 18px;
+}
+.search .container .searchBox input[type="text"]{
+    font-family: "Raleway", sans-serif;
+    border: none;
+    font-size: 14px;
+    background-color: #EDF4F6;
+    padding: 18px 30px;
+    flex-grow: 1;
+}
+.search .container .searchBox button{
+    font-family: "Raleway", sans-serif;
+    padding: 15px 50px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #d82a4e;
+    border: none;
+    cursor: pointer;
+}
+.search .container .searchBox input[type="text"]:focus{
+    outline: none;
+    border-bottom: 2px solid #d82a4e;
+}
+/* search */
+
+/* featured */
+
+.featuredCourses{
+    margin-bottom: 115px;
+}
+.featuredCourses .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+.featuredCourses  h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #474747;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.featuredCourses  p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14.1px;
+    color: #878787;
+    text-align: center;
+}
+.featuredCourses  ul{
+    padding-top: 62px;
+    list-style: none;
+    gap: 45px;
+    display: flex;
+    margin-inline: auto;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+.featuredCourses  a{
+    text-decoration:none ;
+    color: #474747;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.featuredCourses .container .fCourse{
+    width: calc((100% - 90px)/4);
+    position: relative;
+}
+.featuredCourses .container .fCourse img{
+    display: block;
+}
+.featuredCourses .container .fCourse .price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: "Raleway", sans-serif;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: #d82a4e;
+}
+.featuredCourses .container .fCourse .caption{
+    background-color: #EDF4F6;
+    padding: 45px 23px 25px;
+}
+.featuredCourses .container .fCourse .caption h5{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #474747;
+    margin-bottom: 11px;
+}
+.featuredCourses .container .fCourse .caption p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14.1px;
+    color: #878787;
+    margin-bottom: 25px;
+    
+}
+.featuredCourses .container .fCourse .caption span{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #d82a4e;
+}
+.featuredCourses .container .fCourse hr{
+    background-color: #d82a4e;
+}
+.featuredCourses .container .fCourse .author{
+    background-color: #EDF4F6;
+    display: flex;
+    align-items: center;
+}
+.featuredCourses .container .fCourse .author img{
+    height: 44px;
+    width: 44px;
+    border-radius: 22px;
+    margin:13px 30px;
+}
+.featuredCourses .container .fCourse .author p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14.1px;
+    color: #878787;
+}
+.featuredCourses .container .fCourse .author span{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14.1px;
+    color: #d82a4e;
+    margin-left: 4px;
+}
+/* featured */
+
+/* signup as a teacher */
+
+.signup{
+    display: flex;
+    height: 100vh;
+}
+.signup .container{
+    height: 100%;
+    width: 50%;
+    background-color: #d82a4e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signup .container h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+    left: 12%;
+    
+}
+.signup .container p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14.1px;
+    color: white;
+    margin-bottom: 45px;
+    width: 76%;
+    position: relative;
+    left: 12%;  
+}
+.signup .container .data{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px;
+    margin: 0 auto;
+    width: 76%;
+}
+.signup .container .data input{
+    font-family: "Raleway", sans-serif;
+    border: none;
+    font-size: 14px;
+    background-color: #EDF4F6;
+    padding: 18px 30px;
+}
+.signup .container .data input:focus{
+    outline: none;
+    border-bottom: 2px solid #d82a4e;   
+}
+.signup .container .data .upload{
+    font-family: "Raleway", sans-serif;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #3E3E3E;
+    border: none;
+    cursor: pointer;
+    width:fit-content;
+}
+.signup .container .data .search{
+    font-family: "Raleway", sans-serif;
+    padding: 20px 45px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #d82a4e;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 0
+}
+.signup .bg{
+    background-image: url(images/signup-bg.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+}
+/* signup as a teacher */
+
+/* community */
+.community{
+    padding: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.community h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #474747;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.community p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14.1px;
+    color: #878787;
+    text-align: center;
+    margin-bottom: 48px;
+
+}
+.community button{
+    font-family: "Raleway", sans-serif;
+    padding: 15px 50px;
+    height: 53px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #d82a4e;
+    border: none;
+    cursor: pointer;
+    
+}
+/* community */
+
+/* footer */
+
+.ending{
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid #d82a4e;
+    padding-top: 115px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    
+    text-wrap: wrap;
+}
+.ending h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #474747;
+    margin-bottom: 60px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.ending .contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+.ending .contactInfo .list p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #878787;
+    margin-bottom: 27px;
+    text-wrap: wrap;
+}
+.ending .contactInfo .list ::marker{
+    color: #d82a4e;}
+.engineering ul,
+.graphicDesign ul,
+.development ul {
+      list-style: none;
+      padding-bottom: 0;
+
+    }
+    .engineering ul li,
+.graphicDesign ul li,
+.development ul li{
+    margin-bottom: 15px;
+}
+
+.ending a{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #878787;
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: none;   
+    
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter input {
+    font-family: "Raleway", sans-serif;
+    border: none;
+    font-size: 14px;
+    background-color: #EDF4F6;
+    padding: 18px 30px;
+    margin-bottom: 27px;
+  }
+  .newsletter input:focus{
+    outline: none;
+    border-bottom: 2px solid #d82a4e;   
+}
+  .newsletter button {
+    font-family: "Raleway", sans-serif;
+    padding: 15px 30px;
+    height: 53px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #d82a4e;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .newsletter button:hover {
+    background-color: #bf243f;
+  }
+  
+  .newsletter p {
+    font-family: "Raleway", sans-serif;
+    margin-top: 10px;
+    font-size: 14.1px;
+    color: #878787;
+    font-weight: 500;
+
+
+  }
+/* footer */
+
+/* media query */
+@media (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+    .navBar {
+        top: 40px;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navBar .navLinks {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .home .registration input[type="text"] {
+        width: 60%;
+    }
+    .categories .container .card {
+        width: calc((100% - 30px) / 2);
+    }
+    .featuredCourses .container .fCourse {
+        width: calc((100% - 60px) / 3);
+    }
+    .signup .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        top: 20px;
+    }
+    .home .text h2 {
+        font-size: 48px;
+    }
+    .home .registration input[type="text"] {
+        width: 80%;
+    }
+    .categories .container .card {
+        width: calc(100% - 15px);
+    }
+    .featuredCourses .container .fCourse {
+        width: calc((100% - 30px) / 2);
+    }
+    .signup .container {
+        width: 100%;
+    }
+    .signup .bg {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBar {
+        top: 10px;
+        gap: 10px;
+    }
+    .navBar .navLinks {
+        font-size: 14px;
+    }
+    .home .text h2 {
+        font-size: 36px;
+    }
+    .home .registration input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+    }
+    .categories .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .featuredCourses .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .signup .container {
+        padding: 20px;
+    }
+    .signup .data {
+        padding: 20px;
+    }
+    .community h2 {
+        font-size: 36px;
+    }
+}
+/* media query */
